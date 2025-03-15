@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import { Brain, LightBulb, MessageCircle, Puzzle, Star } from "lucide-react";
+import { Brain, Lightbulb, MessageCircle, Puzzle, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 

@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section 
       id="top" 
-      className="min-h-screen flex flex-col justify-center relative overflow-hidden py-20"
+      className="min-h-screen flex flex-col justify-center relative overflow-hidden py-20 bg-purple-950"
     >
       {/* Purple gradient background overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-purple-900/30 to-purple-800/20 pointer-events-none"></div>
@@ -20,7 +20,7 @@ const Hero = () => {
         }}
       />
       
-      <div className="absolute inset-0 bg-gradient-to-b from-background to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-purple-950 to-transparent"></div>
       
       <div className="section-container relative z-10 flex flex-col items-center justify-center text-center">
         <div className="space-y-2 animate-fade-in">
@@ -37,16 +37,16 @@ const Hero = () => {
         </p>
         
         {/* Profile card with age and location */}
-        <div className="mt-8 glass-card border-purple-500/20 bg-purple-900/20 backdrop-blur-lg p-4 rounded-xl max-w-md animate-fade-in opacity-0" style={{ animationDelay: '300ms' }}>
-          <div className="flex flex-col items-center space-y-3">
+        <div className="mt-8 glass-card border-purple-500/20 bg-purple-900/30 backdrop-blur-lg p-6 rounded-xl max-w-md animate-fade-in opacity-0" style={{ animationDelay: '300ms' }}>
+          <div className="flex flex-col items-center space-y-4">
             {portfolioConfig.contact.location && (
               <div className="flex items-center justify-center space-x-2 text-purple-300">
-                <span className="text-sm">📍 {portfolioConfig.contact.location}</span>
+                <span className="text-base">📍 {portfolioConfig.contact.location}</span>
               </div>
             )}
             
             <div className="flex items-center justify-center space-x-2 text-purple-300">
-              <span className="text-sm">✨ 28 years old</span>
+              <span className="text-base">✨ 28 years old</span>
             </div>
             
             <p className="text-sm text-center text-purple-200 italic max-w-xs">

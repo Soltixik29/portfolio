@@ -33,27 +33,27 @@ const Navbar = () => {
     <header 
       className={cn(
         "fixed top-0 left-0 right-0 z-50 px-4 transition-all duration-300 ease-in-out",
-        isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-sm" : "py-5"
+        isScrolled ? "py-3 bg-purple-950/80 backdrop-blur-md shadow-sm" : "py-5 bg-transparent"
       )}
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         <a 
           href="#top" 
-          className="text-xl font-medium font-display transition-colors hover:text-primary"
+          className="text-xl font-medium font-display transition-colors text-white hover:text-purple-300"
         >
           {portfolioConfig.name}
         </a>
         
         <nav className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
-            <a key={item.href} href={item.href} className="nav-link font-medium">
+            <a key={item.href} href={item.href} className="nav-link font-medium text-purple-200 hover:text-purple-300">
               {item.label}
             </a>
           ))}
         </nav>
         
         <button 
-          className="md:hidden text-foreground p-1" 
+          className="md:hidden text-white p-1" 
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -64,7 +64,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       <div 
         className={cn(
-          "fixed inset-0 top-16 bg-background z-40 transform transition-transform duration-300 ease-in-out md:hidden",
+          "fixed inset-0 top-16 bg-purple-950 z-40 transform transition-transform duration-300 ease-in-out md:hidden",
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
@@ -73,7 +73,7 @@ const Navbar = () => {
             <a 
               key={item.href} 
               href={item.href} 
-              className="text-xl font-medium hover:text-primary transition-colors"
+              className="text-xl font-medium text-purple-200 hover:text-purple-300 transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               {item.label}
