@@ -1,7 +1,6 @@
 
 import { portfolioConfig } from "@/config/portfolio";
 import { ArrowDown } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
@@ -33,14 +32,7 @@ const Hero = () => {
           {portfolioConfig.about.title}
         </p>
         
-        <div className="mt-12 flex flex-col sm:flex-row items-center gap-4 animate-fade-in opacity-0" style={{ animationDelay: '400ms' }}>
-          <Button className="btn-hover-effect rounded-full" size="lg" asChild>
-            <a href="#projects">View Projects</a>
-          </Button>
-          <Button className="btn-hover-effect rounded-full" variant="outline" size="lg" asChild>
-            <a href="#contact">Get in Touch</a>
-          </Button>
-        </div>
+        {/* Buttons have been removed */}
       </div>
       
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
