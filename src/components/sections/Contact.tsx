@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "sonner";
 import { Github, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
 
 const Contact = () => {
